@@ -1,0 +1,17 @@
+name: AdminLogs
+version: '${project.version}'
+main: com.adminlogs.adminlogs.AdminLogs
+api-version: '1.21'
+description: Tracks admin commands with a chest GUI viewer
+authors: [ ]
+
+commands:
+  adminlogs:
+    description: View admin command logs
+    usage: /adminlogs [UUID|reload]
+    permission: adminlogs.view
+
+permissions:
+  adminlogs.view:
+    description: Allows a player to open the AdminLogs GUI viewer.
+    default: false

@@ -1,0 +1,24 @@
+# AdminLogs Configuration
+
+# The UUID of the player who is allowed to use /adminlogs.
+# Only this player can view the admin command logs via UUID match.
+# Alternatively, grant the 'adminlogs.view' permission node through your
+# permissions plugin to allow additional players without editing this file.
+#
+# To find a player's UUID: https://mcuuid.net/
+# After editing this file, run /adminlogs reload in-game (no restart needed).
+#
+# NOTE: The viewer's own commands are intentionally NOT logged. This is by
+# design so the auditor does not appear in their own audit trail. If you want
+# the viewer's commands captured too, set a different UUID here for a
+# dedicated "watcher" account.
+viewer-uuid: "PASTE-UUID-HERE"
+
+# How many commands to show per page in the GUI (1–45).
+# 45 fills all five content rows of a double chest.
+commands-per-page: 45
+
+# Maximum number of commands stored per player.
+# Once this limit is reached, the oldest entry is dropped to make room.
+# Increase this if you want longer history; decrease it to keep logs.yml small.
+max-entries-per-player: 2000
